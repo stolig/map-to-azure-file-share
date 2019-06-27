@@ -64,7 +64,7 @@ function mapDrive {
 		
 		# add your new mapped drive to azure share:
 
-		New-PSDrive -Name "$strShareValue" -PSProvider FileSystem -Root "\\$serverPath\$strShareName" -Persist -Scope Global #2>$null #-Credential $credential
+		New-PSDrive -Name "$strShareValue" -PSProvider FileSystem -Root "\\$serverPath\$strShareName" -Persist -Scope Global 2>$null #-Credential $credential
 			
 	}
 
